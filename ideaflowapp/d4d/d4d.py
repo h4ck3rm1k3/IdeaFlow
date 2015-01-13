@@ -871,11 +871,11 @@ class d4d:
   @classmethod
   def abnormalize_matrix(clz, sparse_matrix, assertion_count=10, separator="\n", show_weights=True):
     """Returns a string of assertion_count number of assertions in sparse_matrix.
-       If matrix doesn't have that many asssertions, it returns all the asssertions in sparse_matrix.
+       If matrix doesn't have that many assertions, it returns all the assertions in sparse_matrix.
        If assertion_count is "all", return all the assertions in the sparse_matrix.
        This is not advisable for large a matrix like d4d.c4.sparse_matrix.
        Within the returned string will be abnormalized versions of the assertions.
-       If show_weights is True, the default, then the weight of each asssertion is shown between concept2
+       If show_weights is True, the default, then the weight of each assertion is shown between concept2
        and the separator. However, if the weight == 1, then its never shown as that's the default weight.
        This is not a top level function.
     """
@@ -962,7 +962,7 @@ class d4d:
        Examples: 
        d4d.c4.how_true_is("dog is a pet") 
        d4d.c4.how_true_is('dog', 'IsA', 'pet') 
-       Warning: If the first arg cannot be interpreted as an asssertion, it will be used as a concept.
+       Warning: If the first arg cannot be interpreted as an assertion, it will be used as a concept.
        If the first arg IS interpreted as an assertion, the other args will be ignored.
     """
     concept1 = None
